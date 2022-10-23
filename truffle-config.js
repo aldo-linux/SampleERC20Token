@@ -44,11 +44,11 @@ module.exports = {
     //
     development: {
      host: "127.0.0.1",     // Localhost (default: none)
-     port: 9545,            // Standard Ethereum port (default: none)
+     port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
     sepolia: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
+      provider: () => new HDWalletProvider(mnemonic, `https://sepolia.infura.io/v3/${infuraKey}`),
       network_id: 11155111,  // Sepolia's id
       gas: 8500000,          // Seoplia has a lower block limit than mainnet
       gasPrice: 20000000000  // 20 gwei (in wei) (default: 100 gwei)
